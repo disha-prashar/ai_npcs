@@ -32,6 +32,10 @@ deactivate
 
 ### Install dependencies
 ```
+python -m pip install transformers datasets peft sentencepiece protobuf trl wandb
+python -m pip install -U optimum
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
 pip install transformers datasets
 pip install -U optimum
 ```
