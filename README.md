@@ -11,6 +11,7 @@ The following steps were used to fine-tune Zephyr 7B
 3. Upload the JSON file and create a dataset on the HuggingFace cloud [here](https://huggingface.co/datasets/dprashar/npc_dialogue_rpg_quests) which can be used to fine-tune Zephyr.
 4. Use train_zephyr.py to fine-tune the downloaded Zephyr model on the dataset uploaded to HuggingFace.
 5. Test the model's accuracy using test_trained_model.py.
+- The Zephyr 7B Model can be attained from the PlasticSCM Nomad_XR cloud in the Project "CS4470_integratedLLM" workspace under Assets\StreamingAssets\zephyr-7b.gguf
 
 ### Directories and Their Contents
 archive: files in this directory were used for testing and experimentation
@@ -41,3 +42,12 @@ pip install -U optimum
 ```
 
 ## Python Server
+**Only applicable when using CS4470-DialogueGeneration Repo on Nomad_XR's PlasticSCM cloud sever
+**See Above for attaching an LLM Model
+The Python Server that uses UDP Sockets to communicate with the CS4470-DialogueGeneration Unity Clients can be run by running Server.py.
+
+The Server.py was created by our team, where a server binds itself to an IP address, creating a UDP Socket. Data is received and passed along to the LLM Model chosen, and the response is returned by sending the data back to the client that requested it. This model only supports a single client.
+
+Note that Youssef Elashry provided Server socket setup through the [Python-Unity-Socket-Communication(https://github.com/Siliconifier/Python-Unity-Socket-Communication)] library, which is not owned or created by our team.
+
+
