@@ -52,6 +52,6 @@ The Python Server that uses UDP Sockets to communicate with the CS4470-DialogueG
 The Server.py was created by our team, where a server binds itself to an IP address, creating a UDP Socket. Data is received and passed along to the LLM Model chosen, and the response is returned by sending the data back to the client that requested it. This model only supports a single client.
 
 
-Note that Youssef Elashry provided Server socket setup through the [Python-Unity-Socket-Communication(https://github.com/Siliconifier/Python-Unity-Socket-Communication)] library, which is not owned or created by our team.
+Note that Youssef Elashry provided Server socket setup through the [Python-Unity-Socket-Communication](https://github.com/Siliconifier/Python-Unity-Socket-Communication) library, which is not owned or created by our team.
 
 
